@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>330</y>
+      <w>380</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Company
+--
+# name: string="BicroToft"
+- SIRET Num: string
+- VAT Num: string
+- adress: string="Rue de Reims"
+- postal_code: string="51100"
+- city: string="Reims"
+- contact: string="M.LeGrand"
+- contact_email: string="Email.legrand@bicrosoft.fr"
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>0</y>
+      <w>360</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Account
+--
+_- id: int_
+- login: string="Duparles00"
+- password: string="passwordOfCh@rles" (Encrypt)
+# email: string="Charles.Dupond@email.fr"
+- tel: string="01 02 03 04 05"
+- date_of_creation: date="01/01/1900"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>320</y>
+      <w>270</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>User
+--
+# last_name: string="Dupond"
+# first_name: string="Charles"
+- date_of_birth: date="01/01/1900"
+- adress: string="Rue de Reims"
+- postal_code: string="51100"
+- city: string="Reims"
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>150</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>240</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>240</y>
+      <w>190</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>700</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Beta Offer
+--
+_- id: int_
+# name_of_game: string="Grand Theft Moto III Beta Test 2"
+# number_of_key: int="4"
+# plateform: string="Playstation, Xbox"
+- description: string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>440</y>
+      <w>110</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+Participer v</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>480</y>
+      <w>320</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+&lt; Proposer</panel_attributes>
+    <additional_attributes>10.0;270.0;280.0;270.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>900</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Key
+--
+_- id: int_
+- key: string="XXXX-XXXX-XXXX"
+- plateform: string="Playstation"
+- used: bool=false</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>810</y>
+      <w>350</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+Correspondre v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0;330.0;160.0</additional_attributes>
+  </element>
+</diagram>
